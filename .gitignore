@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+*.dSYM
+easynn_test
+__pycache__
