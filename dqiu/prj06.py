@@ -245,7 +245,7 @@ def update_theta(theta, nabla_J, epsilon):
     # ToDo: modify code below as needed
 #     (p_c1_W, p_c1_b, p_c2_W, p_c2_b, p_f_W, p_f_b) = nabla_J
 #     (c1_W, c1_b, c2_W, c2_b, f_W, f_b) = theta
-    updated_theta = np.array(theta) - epsilon * np.array(nabla_J)
+    updated_theta = np.array(theta, dtype=object) - epsilon * np.array(nabla_J, dtype=object)
     return tuple(updated_theta)
 
 
